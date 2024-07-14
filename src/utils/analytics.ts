@@ -19,6 +19,7 @@ export class Analytics {
 
   async track(namespace: string, event: object = {}, opts?: TrackOptions) {
     //db call to persist this event
+    console.log("Tracking event", namespace, event);
 
     let key = `analytics::${namespace}`;
 
